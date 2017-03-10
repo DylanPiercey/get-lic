@@ -1,0 +1,30 @@
+{
+  "name": "get-loc",
+  "description": "Gets the current location for an html document with polyfill and webworker support.",
+  "version": "1.0.0",
+  "author": "Dylan Piercey <pierceydylan@gmail.com>",
+  "bugs": "https://github.com/DylanPiercey/get-loc/issues",
+  "devDependencies": {
+    "snazzy": "^3.0.0",
+    "standard": "^6.0.8"
+  },
+  "homepage": "https://github.com/DylanPiercey/get-loc",
+  "keywords": [
+    "location",
+    "isomorphic",
+    "universal"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DylanPiercey/get-loc"
+  },
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "global": "^4.3.1"
+  }
+}
