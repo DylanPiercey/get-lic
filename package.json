@@ -4,27 +4,31 @@
   "version": "1.0.0",
   "author": "Dylan Piercey <pierceydylan@gmail.com>",
   "bugs": "https://github.com/DylanPiercey/get-loc/issues",
-  "devDependencies": {
-    "snazzy": "^3.0.0",
-    "standard": "^6.0.8"
+  "dependencies": {
+    "window-var": "^1.0.11"
   },
+  "devDependencies": {
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/DylanPiercey/get-loc",
   "keywords": [
-    "location",
     "isomorphic",
+    "location",
     "universal"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/DylanPiercey/get-loc"
   },
   "scripts": {
-    "lint": "standard --verbose | snazzy",
-    "test": "npm run lint"
-  },
-  "dependencies": {
-    "global": "^4.3.1"
+    "build": "npm run lint && tsc",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "prepublish": "npm run build"
   }
 }
