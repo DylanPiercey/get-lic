@@ -30,5 +30,6 @@
     "build": "npm run lint && tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "prepublish": "npm run build"
-  }
+  },
+  "types": "dist/index.d.ts"
 }
