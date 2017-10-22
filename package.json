@@ -1,7 +1,7 @@
 {
   "name": "get-loc",
   "description": "Gets the current location for an html document with polyfill and webworker support.",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "author": "Dylan Piercey <pierceydylan@gmail.com>",
   "bugs": "https://github.com/DylanPiercey/get-loc/issues",
   "dependencies": {
