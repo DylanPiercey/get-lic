@@ -1,5 +1,5 @@
 // Better global support (for web/service workers)≥
-import { get as getWindow } from "window-var";
+import { get as getWindow } from "get-win";
 
 /**
  * Finds the location object, checking for polyfill and falling back to empty object.
